@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="박준혁 Baak Jun의 AI, 웹/앱, 데이터 기반 서비스 포트폴리오"
+    />
+    <title>Baak Jun | Portfolio</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#hero" aria-label="Baak Jun 홈으로 이동">Baak Jun</a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">메뉴 열기</span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="주요 섹션">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Computer Science Developer</p>
+          <h1>박준혁 <span>Baak Jun</span></h1>
+          <p class="hero-text">
+            사용자에게 실제로 도움이 되는 서비스를 만들고 싶은 컴퓨터공학 전공 개발자입니다.
+            AI, 웹/앱 개발, 게임 개발, 데이터 기반 서비스에 관심을 두고 프로젝트를 완성해가고 있습니다.
+          </p>
+          <div class="hero-actions" aria-label="주요 링크">
+            <a class="button primary" href="https://github.com/baak-jun" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="button" href="mailto:ornotofficial@naver.com" target="_blank" rel="noopener noreferrer">Email</a>
+            <a class="button ghost" href="#projects">Projects</a>
+          </div>
+        </div>
+        <div class="hero-panel" aria-label="포트폴리오 요약">
+          <div class="metric">
+            <span>Focus</span>
+            <strong>AI Service</strong>
+          </div>
+          <div class="metric">
+            <span>Build</span>
+            <strong>Web / App</strong>
+          </div>
+          <div class="metric">
+            <span>Workflow</span>
+            <strong>Plan to Release</strong>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>기술을 실제 사용 경험으로 연결하는 개발자</h2>
+        </div>
+        <p class="lead">
+          컴퓨터공학을 공부하며 기술이 실제 사용자 경험으로 이어지는 과정에 관심을 두고 있습니다.
+          AI 챗봇, 온디바이스 AI, 웹/앱 서비스, 게임 개발 프로젝트를 진행하고 있으며, 단순히
+          기능을 구현하는 데서 멈추지 않고 사용자가 어떤 흐름으로 서비스를 경험하는지와 프로젝트를
+          어떻게 끝까지 완성할 수 있는지를 함께 고민합니다.
+        </p>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2>대표 프로젝트</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <img src="./assets/welfare-doctor.png" alt="Welfare Chatbot 복지 의료 이미지" />
+            <div class="project-content">
+              <div class="project-title-row">
+                <h3>Welfare Chatbot</h3>
+                <span class="badge">Portfolio / Internship Project</span>
+              </div>
+              <p>
+                미래내일 일경험에서 진행한 AI LLM 기반 시니어 청각장애인 복지지원 챗봇 프로젝트입니다.
+                Flutter 모바일 앱과 RAG 기반 복지정보 챗봇 구조를 다뤘습니다.
+              </p>
+              <dl>
+                <dt>Tech</dt>
+                <dd>Flutter, Dart, Python, RAG, LLM, FAISS</dd>
+                <dt>Role</dt>
+                <dd>Flutter UI 개발, 일정 관리, 요구사항 정리, 개발자 간 커뮤니케이션 조율</dd>
+                <dt>Impact</dt>
+                <dd>온보딩, 로그인, 회원가입, 챗봇 화면 등 주요 UI와 복지정보 챗봇 서비스 흐름을 정리했습니다.</dd>
+              </dl>
+              <div class="project-links">
+                <a href="https://github.com/baak-jun/Welfare-Chatbot" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://github.com/baak-jun/Welfare-Chatbot/tree/main/Chatbot" target="_blank" rel="noopener noreferrer">Chatbot Folder</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="./assets/mesugak-buy-signal.png" alt="MesuGak 매수 신호 대시보드 스크린샷" />
+            <div class="project-content">
+              <div class="project-title-row">
+                <h3>MesuGak</h3>
+                <span class="badge in-progress">V1 Portfolio / V2 In Progress</span>
+              </div>
+              <p>
+                주식 종목의 기술적 지표를 분석해 매수 신호를 탐색하는 주식 분석 웹 서비스입니다.
+                V1의 볼린저밴드 기반 구조를 바탕으로 V2에서는 다중 지표 전략 엔진으로 개선 중입니다.
+              </p>
+              <dl>
+                <dt>Tech</dt>
+                <dd>React, Vite, Firebase, Firestore, Cloud Functions, Python, Bollinger Bands, RSI, Ichimoku Cloud</dd>
+                <dt>Role</dt>
+                <dd>서비스 기획, React UI 개발, 매수 신호 구조 설계, Firebase 기반 저장/배포 구성</dd>
+                <dt>Impact</dt>
+                <dd>종목 분석, 상태 분류, Firestore 저장, 웹 화면 표시 흐름과 Buy Signal / Normal / Squeeze 구분을 구현했습니다.</dd>
+              </dl>
+              <div class="project-links">
+                <a href="https://github.com/baak-jun/MesuGak" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://github.com/baak-jun/MesuGak/tree/main/Mesugak_V1" target="_blank" rel="noopener noreferrer">V1 README</a>
+                <a href="https://github.com/baak-jun/MesuGak/tree/main/Mesugak_V2" target="_blank" rel="noopener noreferrer">V2 README</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img class="character-preview" src="./assets/lethe-traum.png" alt="Lethe 주인공 트라움 2D 캐릭터" />
+            <div class="project-content">
+              <div class="project-title-row">
+                <h3>Lethe</h3>
+                <span class="badge game">Unity / Mystery Adventure</span>
+              </div>
+              <p>
+                기억을 잃는 던전에서 진실을 만들어가는 특수 설정 미스터리 추리 어드벤처 게임입니다.
+                던전, 초능력, 살인 사건을 결합해 단서와 증언을 따라 사건을 파헤치는 흐름으로 구성했습니다.
+              </p>
+              <dl>
+                <dt>Tech</dt>
+                <dd>Unity, C#, 2D, Pixel Art, Adventure Game</dd>
+                <dt>Role</dt>
+                <dd>게임 기획, Unity 기반 구현, C# 조작/상호작용 로직, 문서와 리소스 정리</dd>
+                <dt>Impact</dt>
+                <dd>대화 진행, 이동, 상호작용, 공격, 증거 확인 등 추리 어드벤처에 필요한 기본 플레이 흐름을 구성했습니다.</dd>
+              </dl>
+              <div class="project-links">
+                <a href="https://drive.google.com/drive/folders/1bdyWPaJ5oGx4jNJe7f6Yv4CiiPn2ckvm?usp=drive_link" target="_blank" rel="noopener noreferrer">Drive Folder</a>
+                <a href="https://drive.google.com/file/d/1_BkwrOA4-q_UI6qyiFB96tX4vy1VpfCE/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">Gameplay Video</a>
+                <a href="https://drive.google.com/file/d/1WoqFF_n03BgJWSSWPvMPZ3lMis1zDpm9/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">Build ZIP</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2>기술 스택</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Frontend</h3>
+            <p>React, Vite, Flutter, Dart, HTML, CSS, JavaScript</p>
+          </div>
+          <div class="skill-group">
+            <h3>Backend / Infra</h3>
+            <p>Firebase, Firestore, Cloud Functions, Python, REST API</p>
+          </div>
+          <div class="skill-group">
+            <h3>AI / Data</h3>
+            <p>LLM, RAG, FAISS, LangChain, HuggingFace, 데이터 기반 서비스 구조</p>
+          </div>
+          <div class="skill-group">
+            <h3>Game / 기타</h3>
+            <p>Unity, C#, Git, GitHub</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section experience">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2>미래내일 일경험 프로젝트형 인턴</h2>
+        </div>
+        <p class="lead">
+          AI LLM 기반 시니어 청각장애인 복지지원 챗봇 시스템 프로젝트에서 Flutter UI 개발,
+          일정 관리, 프로젝트 진행 관리, 요구사항 조율을 담당했습니다. 제한된 기간 안에서 팀의
+          구현 범위를 정리하고 결과물을 포트폴리오로 공개 가능한 형태까지 다듬는 경험을 했습니다.
+        </p>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2>프로젝트와 작업 기록은 GitHub에서 확인할 수 있습니다.</h2>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="https://github.com/baak-jun" target="_blank" rel="noopener noreferrer">GitHub 방문</a>
+          <a class="button" href="mailto:ornotofficial@naver.com" target="_blank" rel="noopener noreferrer">Email 보내기</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Baak Jun. Built for GitHub Pages.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

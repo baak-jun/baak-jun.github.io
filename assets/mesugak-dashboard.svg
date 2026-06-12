@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">MesuGak dashboard preview</title>
+  <desc id="desc">Stock signal dashboard preview with chart and status cards.</desc>
+  <rect width="960" height="540" fill="#0f172a"/>
+  <rect x="78" y="70" width="804" height="400" rx="18" fill="#111827"/>
+  <rect x="110" y="106" width="180" height="330" rx="14" fill="#1f2937"/>
+  <rect x="324" y="106" width="510" height="200" rx="14" fill="#172033"/>
+  <rect x="324" y="330" width="150" height="106" rx="14" fill="#16213a"/>
+  <rect x="504" y="330" width="150" height="106" rx="14" fill="#16213a"/>
+  <rect x="684" y="330" width="150" height="106" rx="14" fill="#16213a"/>
+  <path d="M350 260c54-82 98-42 142-92 54-61 100 55 154-2 38-40 70-18 150-70" fill="none" stroke="#60a5fa" stroke-width="10" stroke-linecap="round"/>
+  <path d="M350 230c68 28 116 42 174 4 64-42 104-24 156 16 44 34 82 18 116-8" fill="none" stroke="#a78bfa" stroke-width="8" stroke-linecap="round" opacity=".78"/>
+  <path d="M140 150h112M140 196h90M140 242h118M140 288h76" stroke="#cbd5e1" stroke-width="12" stroke-linecap="round"/>
+  <rect x="354" y="362" width="88" height="14" rx="7" fill="#93c5fd"/>
+  <rect x="534" y="362" width="88" height="14" rx="7" fill="#c4b5fd"/>
+  <rect x="714" y="362" width="88" height="14" rx="7" fill="#818cf8"/>
+  <path d="M354 402h64M534 402h64M714 402h64" stroke="#94a3b8" stroke-width="10" stroke-linecap="round"/>
+</svg>
