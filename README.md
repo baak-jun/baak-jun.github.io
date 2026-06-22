@@ -1,55 +1,30 @@
-# Baak Jun Portfolio
+# 망치든개발자고 포트폴리오
 
-GitHub Pages로 배포하는 박준혁(Baak Jun)의 개인 포트폴리오 웹사이트입니다. 블로그보다 프로젝트 허브에 가깝게 구성했으며, 대표 프로젝트와 기술 스택, 경험, 연락 링크를 한 화면에서 확인할 수 있습니다.
-
-## 배포 주소
-
-```text
-https://baak-jun.github.io/
-```
-
-## 프로젝트 구조
-
-```text
-.
-├── index.html
-├── styles.css
-├── script.js
-├── assets/
-│   ├── mesugak-dashboard.svg
-│   ├── mesugak-buy-signal.png
-│   ├── lethe-traum.png
-│   ├── welfare-chatbot.svg
-│   └── welfare-doctor.png
-├── AGENTS.md
-└── README.md
-```
+GitHub Pages에 배포하는 Flutter Web 기반 개인 포트폴리오입니다.
 
 ## 로컬 실행
 
-정적 HTML/CSS/JavaScript 사이트라 별도 빌드 도구가 필요하지 않습니다.
+Flutter SDK가 설치된 환경에서 실행합니다.
 
 ```bash
-python -m http.server 8000
+flutter pub get
+flutter run -d chrome
 ```
 
-브라우저에서 다음 주소를 엽니다.
+## 웹 빌드
 
-```text
-http://localhost:8000
+GitHub Pages 루트 경로에 배포할 산출물을 만듭니다.
+
+```bash
+flutter build web --base-href /
 ```
 
-## GitHub Pages 배포 방법
+빌드 결과물은 `build/web`에 생성됩니다.
 
-1. Repository Settings로 이동
-2. Pages 메뉴 선택
-3. Source: Deploy from a branch
-4. Branch: main
-5. Folder: /root
-6. Save
+## 프로젝트 상태 관리
 
-## 포함 프로젝트
+프로젝트 목록은 [lib/main.dart](lib/main.dart)의 `activeProjects`, `completedProjects`, `pausedProjects`로 분리되어 있습니다. 새 프로젝트는 원하는 목록에 `ProjectInfo` 한 항목을 추가하고, 상태를 바꿀 때는 해당 항목을 다른 목록으로 옮기면 됩니다. 수상·출시·협업 같은 특이사항은 해당 항목에 `note:`를 추가하면 카드에 표시됩니다.
 
-- Welfare Chatbot: AI LLM 기반 시니어 청각장애인 복지지원 챗봇 프로젝트
-- MesuGak: 기술적 지표 기반 주식 매수 신호 분석 웹 서비스
-- Lethe: Unity/C# 기반 특수 설정 미스터리 추리 어드벤처 게임
+- 진행중: 매수각, 갤러리/피노타입 분석 온디바이스 상담 인공지능 챗봇 서비스
+- 완료: 레테, 복지 챗봇
+- 중단: 체스 - 킹슬레이어
