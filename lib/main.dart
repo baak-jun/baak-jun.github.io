@@ -81,7 +81,7 @@ class HeaderSection extends StatelessWidget {
     const SizedBox(height: 20),
     Container(width: 56, height: 4, color: const Color(0xFFB96A3B)),
     const SizedBox(height: 24),
-    const Text('사람에게 닿는 문제를 기술로 풀고, 오래 쓰기 좋은 경험을 만듭니다.', style: TextStyle(fontSize: 17, height: 1.7)),
+    const Text('사람들의 일상에 즐거움을 더하는 소프트웨어를 만듭니다.', style: TextStyle(fontSize: 17, height: 1.7)),
     const SizedBox(height: 24),
     OutlinedButton.icon(
       onPressed: () => launchUrl(
@@ -103,11 +103,28 @@ class HeaderSection extends StatelessWidget {
 
 class AboutSection extends StatelessWidget {
   const AboutSection({super.key});
+
   @override
-  Widget build(BuildContext context) => const Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-    SectionTitle(title: '소개'), SizedBox(height: 22),
-    Text('사용자가 자연스럽게 이해하고 사용할 수 있는 서비스를 설계하고 구현합니다. 새로운 기술을 탐구하면서도, 문제의 본질과 실제 사용 경험을 놓치지 않으려 합니다.', style: TextStyle(fontSize: 16, height: 1.8)),
-  ]);
+  Widget build(BuildContext context) => const Column(
+    crossAxisAlignment: CrossAxisAlignment.start,
+    children: [
+      SectionTitle(title: '소개'),
+      SizedBox(height: 22),
+      Text(
+        '저는 문제의 본질을 먼저 파악하는 일을 중요하게 생각합니다. 불편함에 익숙해진 나머지, 사실은 문제인 것을 문제로 인식하지 못한 채 불필요한 시간을 쓰고 있지는 않은지 끊임없이 살핍니다.',
+        style: TextStyle(fontSize: 16, height: 1.8),
+      ),
+      SizedBox(height: 16),
+      Text(
+        '비가 멈춘 순간 가장 먼저 우산을 내리는 사람처럼, 변화의 신호를 빠르게 알아차리고 더 나은 선택을 행동으로 옮기고 싶습니다. 작은 비라면 우산을 드는 것보다 내리는 편이 더 효율적이며, 불필요한 비용과 시간을 줄이는 리스크 관리이기도 합니다. 그 선택이 다른 사람에게도 새로운 인식의 출발점이 될 수 있다고 믿습니다.',
+        style: TextStyle(fontSize: 16, height: 1.8),
+      ),
+      SizedBox(height: 28),
+      Text('가치관 01  후회하지 않는 것', style: TextStyle(fontSize: 15, fontWeight: FontWeight.w700, color: Color(0xFFB96A3B))),
+      SizedBox(height: 10),
+      Text('가치관 02  옳다고 믿는 일을 행하는 것', style: TextStyle(fontSize: 15, fontWeight: FontWeight.w700, color: Color(0xFF347260))),
+    ],
+  );
 }
 
 class ProjectsSection extends StatelessWidget {
