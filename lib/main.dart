@@ -18,7 +18,12 @@ const completedProjects = <ProjectInfo>[
   ProjectInfo(title: '복지 챗봇', description: '복지 제도 정보를 대화형으로 탐색할 수 있도록 만든 챗봇 프로젝트입니다.', icon: Icons.chat_bubble_outline, link: 'https://github.com/baak-jun/Welfare-Chatbot'),
 ];
 const pausedProjects = <ProjectInfo>[
-  ProjectInfo(title: '체스 - 킹슬레이어', description: '체스 규칙을 바탕으로 기획한 게임 프로젝트입니다.', icon: Icons.extension_outlined),
+  ProjectInfo(
+    title: '체스 - 킹슬레이어',
+    description: '체스 규칙을 바탕으로 기획한 게임 프로젝트입니다.',
+    icon: Icons.extension_outlined,
+    link: 'https://baakjun.itch.io/king-slayer',
+  ),
 ];
 
 void main() => runApp(const PortfolioApp());
@@ -29,7 +34,7 @@ class PortfolioApp extends StatelessWidget {
   Widget build(BuildContext context) {
     const ink = Color(0xFF2D2926);
     return MaterialApp(
-      title: '망치든개발자고 포트폴리오',
+      title: '망치든 개발자 포트폴리오',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         scaffoldBackgroundColor: const Color(0xFFFFFCF6),
@@ -71,7 +76,7 @@ class HeaderSection extends StatelessWidget {
     Row(children: [
       Image.asset('assets/명함 아이콘.png', width: 58, height: 58, fit: BoxFit.contain),
       const SizedBox(width: 16),
-      Flexible(child: Text('망치든개발자고', style: GoogleFonts.notoSansKr(fontSize: 42, fontWeight: FontWeight.w800, height: 1.15))),
+      Flexible(child: Text('망치든 개발자', style: GoogleFonts.notoSansKr(fontSize: 42, fontWeight: FontWeight.w800, height: 1.15))),
     ]),
     const SizedBox(height: 20),
     Container(width: 56, height: 4, color: const Color(0xFFB96A3B)),
@@ -243,5 +248,5 @@ class SectionTitle extends StatelessWidget {
 class FooterSection extends StatelessWidget {
   const FooterSection({super.key});
   @override
-  Widget build(BuildContext context) => Center(child: Text('© ${DateTime.now().year} 망치든개발자고. 플러터로 만들었습니다.', style: TextStyle(fontSize: 14, color: const Color(0xFF2D2926).withValues(alpha: 0.60))));
+  Widget build(BuildContext context) => Center(child: Text('© ${DateTime.now().year} 망치든 개발자. 플러터로 만들었습니다.', style: TextStyle(fontSize: 14, color: const Color(0xFF2D2926).withValues(alpha: 0.60))));
 }
