@@ -23,7 +23,11 @@ flutter build web --base-href /
 
 ## 프로젝트 상태 관리
 
-프로젝트 목록은 [lib/main.dart](lib/main.dart)의 `activeProjects`, `completedProjects`, `pausedProjects`로 분리되어 있습니다. 새 프로젝트는 원하는 목록에 `ProjectInfo` 한 항목을 추가하고, 상태를 바꿀 때는 해당 항목을 다른 목록으로 옮기면 됩니다. 수상·출시·협업 같은 특이사항은 해당 항목에 `note:`를 추가하면 카드에 표시됩니다.
+프로젝트 목록은 [lib/main.dart](lib/main.dart)의 `activeProjects`, `completedProjects`, `pausedProjects`로 분리되어 있습니다. 새 프로젝트는 원하는 목록에 `ProjectInfo` 한 항목을 추가하고, 상태를 바꿀 때는 해당 항목을 다른 목록으로 옮기면 됩니다.
+
+대표 이미지는 `assets/` 폴더에 넣고 `imagePath: 'assets/파일명.png'`처럼 연결합니다. 예를 들어 온디바이스 상담 챗봇 이미지를 추가하려면 `assets/counseling-chatbot.png`로 파일을 넣은 뒤 해당 프로젝트의 `hideImage: true`를 지우고 `imagePath: 'assets/counseling-chatbot.png'`를 추가하면 됩니다.
+
+이미지를 임시로 비워둘 프로젝트는 `hideImage: true`를 사용합니다. 수상·출시·협업 같은 특이사항은 `note:`, 담당 파트는 `role:`, 핵심 포인트는 `highlights:`에 추가하면 대표 프로젝트 카드와 프로젝트 카드에 반영됩니다.
 
 - 진행중: 매수각, 갤러리/피노타입 분석 온디바이스 상담 인공지능 챗봇 서비스
 - 완료: 레테, 복지 챗봇
